@@ -14,6 +14,8 @@
 
 @implementation AppDelegate
 
+
+// Do registeration when lauching the app
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     if ([[UIApplication sharedApplication]currentUserNotificationSettings].types!=UIUserNotificationTypeNone) {

@@ -5,6 +5,7 @@
 //  Created by Lichao Yin on 4/8/15.
 //  Copyright (c) 2015 Lichao Yin. All rights reserved.
 //
+//  Test For GitHub
 
 #import "ViewController.h"
 
@@ -29,6 +30,7 @@
     return YES;
 }
 
+// Time format converter
 - (NSString *) timeFormatted:(int)totalSeconds {
     int seconds = totalSeconds % 60;
     int minutes = (totalSeconds / 60) % 60;
@@ -37,6 +39,7 @@
     return [NSString stringWithFormat:@"%02d:%02d:%02d", hours, minutes, seconds];
 }
 
+// Send notification every 10 seconds
 - (void) substractTime {
     self.seconds += 1;
     self.timeLabel.text = [self timeFormatted:self.seconds];
